@@ -1,0 +1,991 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+/*Fonts settings*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    font-family: 'Fraunces';
+}
+
+h6,
+p {
+    font-family: 'Barlow';
+}
+
+/*End Fonts settings*/
+
+/*Start navbar*/
+.navbar {
+    clear: both;
+    overflow: auto;
+}
+
+nav {
+    position: relative;
+    height: 190px;
+    width: 100%;
+    background-color: #3dbeff;
+}
+
+nav .svg-container {
+    display: inline-block;
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 100px;
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+.svg-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+nav a {
+    font-family: 'Barlow', sans-serif;
+}
+
+nav ul {
+    float: right;
+    margin-right: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 180px;
+    margin: 0 5px;
+    padding-left: 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+nav ul li a#contact {
+    font-size: 20px;
+    font-family: 'Fraunces';
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.055);
+}
+
+#contact:hover {
+    background-color: #ebf8ff;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #60c8fc;
+    transition: 0.5s;
+}
+
+.ZIN {
+    z-index: 1;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 180px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*End navbar*/
+
+/*Header*/
+header {
+    display: flex;
+    align-items: center;
+    height: 1100px;
+    background-color: #3dbeff;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: 1900px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-position: center bottom;
+}
+
+.header-title {
+    color: white;
+    letter-spacing: 20px;
+    margin-top: 180px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+
+h1.header-title {
+    margin-left: 5px;
+
+
+}
+
+/*End Header*/
+
+/*Container*/
+.container#textleft {
+    display: flex;
+}
+
+.container#textright {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container h2 {
+    display: flex;
+    text-align: start;
+    font-size: 40px;
+    font-weight: 900;
+    color: #13263b;
+}
+
+.container p {
+    color: rgb(132, 138, 138);
+    font-family: 'Barlow';
+    font-size: 20px;
+    margin-top: 35px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.service {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    background-color: #fffbf8;
+}
+
+.service:hover {
+    background-color: #dfdfdf63;
+}
+
+.service a,
+.service a:visited {
+    color: #13263b;
+    font-size: 20px;
+    font-family: 'Fraunces';
+    font-weight: 800;
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+
+mark {
+    width: 170px;
+    padding-left: 10px;
+    padding-top: -20px;
+    border-radius: 0.6em 0.6em;
+}
+
+mark#yellow {
+    background-color: rgba(255, 225, 0, 0.342);
+
+}
+
+mark#pink {
+    background-color: rgba(248, 45, 96, 0.342);
+}
+
+.container img {
+    width: 50%;
+    background: black;
+}
+
+.container img:hover {
+    opacity: 0.95;
+}
+
+/*End Container*/
+
+/*Photograpic*/
+
+.photographic {
+    display: flex;
+}
+
+.fruits {
+    height: 45vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-bottom: 5vw;
+}
+
+.fruits h3 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.fruits p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+    line-height: 30px;
+    opacity: 0.8;
+}
+
+.fruits#cherry {
+    color: #22544b;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-position: center;
+}
+
+.fruits#orange {
+    color: #175069;
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-position: center;
+}
+
+
+.fruits#cherry:hover,
+.fruits#orange:hover {
+    opacity: 0.95;
+}
+
+/*End Photographic*/
+
+/*Testimonials*/
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    text-align: center;
+}
+
+.testimonials h4 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    opacity: 0.35;
+    text-transform: uppercase;
+    padding-top: 150px;
+}
+
+.cards {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    width: 30%;
+}
+
+.review p {
+    font-size: 18px;
+    font-weight: 700;
+    height: 120px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    margin: 15px 45px;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    opacity: 0.6;
+
+}
+
+.review h5 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #13263b;
+}
+
+.review h6 {
+    font-size: 15px;
+    padding-top: 10px;
+    opacity: 0.4;
+}
+
+.avatar img {
+    width: 75px;
+    border-radius: 100px;
+}
+
+/*End Testimonials*/
+
+/*Gallery*/
+.gallery {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery#milkbottles {
+    background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+}
+
+.gallery#orangeandblue {
+    background-image: url(./images/desktop/image-gallery-orange.jpg);
+}
+
+.gallery#cone {
+    background-image: url(./images/desktop/image-gallery-cone.jpg);
+}
+
+.gallery#sugarcubes {
+    background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+.gallery#milkbottles:hover,
+.gallery#orangeandblue:hover,
+.gallery#cone:hover,
+.gallery#sugarcubes:hover {
+    opacity: 0.95;
+}
+
+
+/*End Gallery*/
+
+/* Footer */
+footer {
+    height: 500px;
+    background-color: #90d4c5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 70px;
+}
+
+footer a,
+footer a:visited {
+    color: #2c7566;
+    font-family: 'Barlow';
+    font-size: 30px;
+    font-weight: 600;
+    padding: 30px;
+    margin-left: 35px;
+    margin-right: 35px;
+    opacity: 0.8;
+}
+
+footer a:hover {
+    color: #205046;
+}
+
+#logofill {
+    fill: #2c7566;
+}
+
+.logo {
+    height: 80px;
+}
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.social {
+    margin-top: 200px;
+}
+
+#facebook {
+    margin-right: 30px;
+}
+
+#instagram {
+    margin-right: 30px;
+}
+
+#twitter {
+    margin-right: 30px;
+}
+
+.signature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background: #205046;
+}
+
+.signature a {
+    font-family: 'Barlow';
+    font-size: 18px;
+    color: #90d4c5;
+    font-weight: 500;
+    cursor: default;
+}
+
+/*End Footer*/
+
+
+/*Tablet XL*/
+@media (max-width: 1260px) {
+
+
+    /* Tablet XL Container*/
+    .container h2 {
+        font-size: 40px;
+    }
+
+    .service {
+        padding-right: 7vw;
+        padding-left: 7vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+
+    .service p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .service a {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+
+    /*Tablet XL Photographic*/
+    .fruits {
+        width: 50%;
+        height: 500px;
+        padding-bottom: 2vw;
+    }
+
+    .fruits h3 {
+        font-size: 30px;
+    }
+
+    .fruits p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*Tablet XL Testimonials*/
+    .testimonials {
+        height: 650px;
+    }
+
+    .testimonials h4 {
+        padding-top: 100px;
+        letter-spacing: 5px;
+    }
+
+    .cards {
+        height: 475px;
+        margin: 0 50px;
+    }
+
+    .review {
+        width: 100%;
+    }
+
+    .review p {
+        margin: 30px 30px;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0;
+        height: 100px;
+    }
+
+    .review h5 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .review h6 {
+        font-size: 15px;
+    }
+
+    .avatar img {
+        width: 100px;
+    }
+
+    /*Tablet XL Gallery*/
+    .gallery {
+        height: 600px;
+    }
+
+    /*Tablet XL Footer*/
+    footer {
+        height: 400px;
+        padding-top: 50px;
+    }
+
+    .logo {
+        padding-bottom: 0px;
+    }
+
+    footer a {
+        font-size: 20px;
+        margin: 0 15px;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .social {
+        margin-top: 150px;
+    }
+
+
+
+    /*Tablet XL Signature*/
+    .signature {
+        height: 30px;
+    }
+
+    .signature a {
+        font-size: 15px;
+    }
+
+}
+
+/*Tablet S*/
+@media (max-width: 1000px) {
+
+    /*Tablet XL Navbar*/
+    .checkbtn {
+        display: block;
+        font-size: 50px;
+        line-height: 180px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 850px;
+        height: 300px;
+        background-color: white;
+        padding: 0 80px;
+        top: 200px;
+        left: -100%;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 0px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: rgb(136, 136, 136);
+        font-weight: 600;
+    }
+
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    /* Tablet S Container*/
+    .container h2 {
+        font-size: 30px;
+    }
+
+    .service {
+        padding-right: 7vw;
+        padding-left: 7vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+
+    .service p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .service a {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+
+    /*Tablet S Photographic*/
+    .fruits {
+        width: 50%;
+        height: 500px;
+        padding-bottom: 2vw;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+
+    .fruits h3 {
+        font-size: 30px;
+    }
+
+    .fruits p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*Tablet S Testimonials*/
+    .testimonials {
+        height: 650px;
+    }
+
+    .testimonials h4 {
+        padding-top: 100px;
+        letter-spacing: 5px;
+    }
+
+    .cards {
+        height: 475px;
+        margin: 0 50px;
+    }
+
+    .review {
+        width: 100%;
+    }
+
+    .review p {
+        margin: 30px 30px;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0;
+        height: 100px;
+    }
+
+    .review h5 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .review h6 {
+        font-size: 15px;
+    }
+
+    .avatar img {
+        width: 100px;
+    }
+
+    /*Tablet S Gallery*/
+    .gallery {
+        height: 600px;
+    }
+
+    /*Tablet S Footer*/
+    footer {
+        height: 400px;
+        padding-top: 50px;
+    }
+
+    .logo {
+        padding-bottom: 0px;
+    }
+
+    footer a {
+        font-size: 20px;
+        margin: 0 15px;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .social {
+        margin-top: 150px;
+    }
+
+    /*Tablet S Signature*/
+    .signature {
+        height: 30px;
+    }
+
+    .signature a {
+        font-size: 15px;
+    }
+}
+
+/*Phone*/
+@media (max-width: 600px) {
+
+    /*Phone Navbar*/
+    nav {
+        height: 100px;
+    }
+
+    nav .svg-container {
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    .svg-container svg {
+        width: 50%;
+        height: 50%;
+    }
+
+    .checkbtn {
+        font-size: 25px;
+        line-height: 100px;
+    }
+
+    header {
+        height: 500px;
+        background-position: center center;
+        background-size: 900px;
+    }
+
+    .header-title {
+        font-size: 10vw;
+        letter-spacing: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .svg-container#arrow svg {
+        margin-left: 15px;
+        width: 70%;
+        height: 70%;
+    }
+
+    /*Phone Containers*/
+    .container#textleft {
+        display: flex;
+        flex-flow: column-reverse;
+        text-align: center;
+    }
+
+    .container#textright {
+        display: flex;
+        flex-flow: column-reverse;
+        text-align: center;
+    }
+
+    .container h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container p {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .container a {
+        font-size: 15px;
+    }
+
+    .container img {
+        background-image: url(./images/mobile/image-transform.jpg);
+        width: 100%;
+    }
+
+    .service {
+        width: 100%;
+        height: 360px;
+        padding-top: 10px;
+        padding-right: 8vw;
+        padding-left: 8vw;
+    }
+
+    .service p {
+        font-size: 15px;
+        line-height: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /*Photographic*/
+    .photographic {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fruits {
+        width: 100%;
+        padding-bottom: 10vw;
+    }
+
+    .fruits h3 {
+        font-size: 25px;
+    }
+
+    .fruits p {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    /*Phone Testimonials*/
+    .testimonials {
+        height: 1000px;
+    }
+
+    .testimonials h4 {
+        padding-top: 50px;
+        letter-spacing: 3px;
+        font-size: 15px;
+    }
+
+    .cards {
+        height: 475px;
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .review {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .review p {
+        margin: 0px 0px;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .review h5 {
+        font-size: 15px;
+        padding-top: 0px;
+    }
+
+    .review h6 {
+        font-size: 12px;
+    }
+
+    .avatar img {
+        width: 60px;
+    }
+
+    /*Phone Gallery*/
+    .gallery {
+        display: flex;
+        flex-flow: column wrap;
+        height: 300px
+    }
+
+    .gallery#milkbottles {
+        background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+        height: 150px;
+        width: 50%;
+        background-size: 100%;
+    }
+
+    .gallery#orangeandblue {
+        background-image: url(./images/desktop/image-gallery-orange.jpg);
+        height: 150px;
+        width: 50%;
+        background-size: 100%;
+    }
+
+    .gallery#cone {
+        background-image: url(./images/desktop/image-gallery-cone.jpg);
+        height: 150px;
+        width: 50%;
+        background-size: 100%;
+    }
+
+    .gallery#sugarcubes {
+        background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+        height: 150px;
+        width: 50%;
+        background-size: 100%;
+    }
+
+    /*Footer*/
+    footer {
+        height: 300px;
+        padding-top: 50px;
+    }
+
+    .logo {
+        padding-bottom: 0px;
+        height: 50px;
+    }
+
+    .logo svg {
+        width: 75%;
+        height: 75%;
+    }
+
+    footer a {
+        font-size: 15px;
+        padding: 15px;
+        margin: 0 5px;
+    }
+
+    .social {
+        margin-top: 100px;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .social svg {
+        width: 30px;
+        height: 50%
+    }
+
+    #facebook {
+        margin-right: 0px;
+    }
+
+    #instagram {
+        margin-right: 0px;
+    }
+
+    #twitter {
+        margin-right: 0px;
+    }
+
+    /*Tablet S Signature*/
+    .signature {
+        height: 30px;
+    }
+
+    .signature a {
+        font-size: 12px;
+    }
+
+}
